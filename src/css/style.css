@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../../img/tom-barrett-hgGplX3PFBg-unsplash.jpg)center/cover fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-container, .selected-post{
+    margin:2% auto;
+    padding-bottom: 10px;
+    width: 550px;
+    height:auto;
+    background:whitesmoke;
+    opacity: .7;
+    border-radius: 10px;
+}
+
+.post:hover{
+  cursor:pointer;
+}
+
+.backBtn{
+  cursor: pointer;
+}
+
+.selected-post {
+  height: auto;
+  padding-bottom: 40px;  
+}
+
+.post-main{
+  display:flex;
+  gap:10px;
+  flex-direction: column;
+  margin:0 12%;
+}
+
+.post-main i {
+  font-size: 2rem;
+}
+
+.post-body{
+  width: 100%;
+  height: 200px;
+  background: grey;
+  border-radius: 10px;
+  opacity: .5;
+}
+
+.body{
+  font-size: 1.3rem;
+  color:whitesmoke;
+}
+
+.post-comments{
+  width: 100%;
+  height: auto;
+  opacity:.7;
+  display: flex;
+  flex-direction: column;
+  gap:10px
+}
+
+.comment{
+  border-radius: 10px;
+  background: grey;
+  font-size:1.25rem;
+}
+
+.comment p, .post-body p{
+  margin:10px;
+  color:whitesmoke
+}
+
+
+
+.posts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:10px 0;
+}
+
+.post{
+    margin-top:10px;
+    width: 450px;
+    height:70px;
+    background:transparent;
+    border:1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.post * {
+    margin:auto 10px;
+}
+
+.post:hover{
+  background: #fff;
+}
+
+.post-head{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.post-head h2{
+    margin-top: 10px;
+    margin-left:-70px;
+}
+
+.Btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    height: 40px;
+    border: none;
+    padding: 0px 20px;
+    background-color: rgb(168, 38, 255);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgb(140, 32, 212);
+    transition-duration: .3s;
+    margin-right: -70px;
+}
+  
+  .svg {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: white;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover {
+    color: transparent;
+  }
+  
+  .Btn:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+  }
+  
+  .Btn:active {
+    transform: translate(3px , 3px);
+    transition-duration: .3s;
+    box-shadow: 2px 2px 0px rgb(140, 32, 212);
+  }
+
+  .input-container{
+    background: whitesmoke;
+    opacity: 1;
+    border-radius: 5px;
+  }
+  
+  .input-container input{
+    width: 440px;
+    height: 70px;
+    outline:none;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .hidden{
+    display: none;
+  }
